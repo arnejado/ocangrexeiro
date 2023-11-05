@@ -1,6 +1,6 @@
 ### Web do Cangrexiero
 
-## Apartado
+## Apartados
 
 1. Contacto
 2. Envio
