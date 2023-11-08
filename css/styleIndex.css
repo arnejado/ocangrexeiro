@@ -1,6 +1,6 @@
 @font-face {
     font-family: 'Galla';
-    src: url('/fonts/GALLA.TTF') format('truetype');
+    src: url('fonts/GALLA.TTF') format('truetype');
     /* Agrega las demás variantes de la fuente si las tienes */
   }
   
@@ -31,6 +31,7 @@ body {
     max-width: 95vw;
     text-align: center;
 }
+
 
 img {
     display: block;
@@ -68,32 +69,34 @@ img {
     box-shadow: 0 0 6px rgba(0, 0, 0, 0.4);
 }
 
+.label_checkbox:hover {
+    box-shadow: 0 0 5px red, 0 0 15px red, 0 0 30px red, 0 0 50px red;
+}
 
 .label_checkbox:hover~ body {
     background-color: black;
+}
+
+.menu_link{
+    background-color: #fff;
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0);
+}
+
+.menu_link:hover {
+    background-color: lightgray;
+}
+
+.menu_link:hover:nth-child(7) {
+    background-color: #00e278;
 }
 
 .checkbox:checked~ .label_checkbox {
     transform: rotate(45deg);
 }
 
-/* .menu_link:hover {
-    background-color: lightgray;
-} */
-
-.menu_link:hover:nth-child(7) {
-    background-color: #00e278;
-}
-
-/* .menu_link{
-    background-color: #fff;
-    box-shadow: 0 0 6px rgba(0, 0, 0, 0);
-} */
-/* 
 .checkbox:checked~ .menu_link {
     box-shadow: 0 0 6px rgba(0, 0, 0, 0.4);
-} */
-
+}
 
 /* productos */
 .checkbox:checked~ .menu_link:nth-child(3) { 
