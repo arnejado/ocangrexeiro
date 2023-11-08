@@ -68,10 +68,10 @@ img {
     cursor: pointer;
     box-shadow: 0 0 6px rgba(0, 0, 0, 0.4);
 }
-
+/* 
 .label_checkbox:hover {
     box-shadow: 0 0 5px red, 0 0 15px red, 0 0 30px red, 0 0 50px red;
-}
+} */
 
 .label_checkbox:hover~ body {
     background-color: black;
