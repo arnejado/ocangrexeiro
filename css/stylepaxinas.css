@@ -1,6 +1,6 @@
 @font-face {
     font-family: 'Galla';
-    src: url('fonts/GALLA.TTF') format('truetype');
+    src: url('../fonts/GALLA.TTF') format('truetype');
     /* Agrega las demás variantes de la fuente si las tienes */
   }
 
@@ -15,44 +15,44 @@ body {
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    background-color: lightgray;
-
+    
 }
 
 h1 {
     text-align: center;
     font-family: "Galla";
+    margin: 25px;
+    font-size: 30px;
 }
 
-main {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    background-color: white;
-    padding: 50px 25px 50px 25px;
-    max-width: 800px;
-    min-width: 800px;
+@media(min-width: 768px) {
+    h1 {
+        font-size: 45px;
+    }
 }
 
-.texto_legal {
-    margin-top: 50px;
+
+
+.contenedor {
+    background-color: rgb(233, 130, 130);
+    width: 100%;
 }
 
-.logo {
-    padding-top: 10px;
-    display: block;
-    margin: auto;
-    width: 75px;
-    height: 75px;
+@media(min-width: 1020px) {
+    .contenedor {
+        width: 1020px;
+    }
 }
 
-.situacion {
-    padding-top: 10px;
-    display: block;
-    margin: auto;
-    width: 80%;
-    height: 80%;
-    max-width: 600px;
+
+article {
+    max-width: 1020px;
 }
 
+article p {
+    margin: 10px;
+
+} 
 
 
 

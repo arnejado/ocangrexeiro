@@ -1,6 +1,6 @@
 @font-face {
     font-family: 'Galla';
-    src: url('fonts/GALLA.TTF') format('truetype');
+    src: url('../fonts/GALLA.TTF') format('truetype');
     /* Agrega las demás variantes de la fuente si las tienes */
   }
   
@@ -27,11 +27,17 @@ body {
     width: 100%;
     z-index: 9999;
     font-family: Galla;
-    font-size: 50px;
+    font-size: 30px;
     max-width: 95vw;
     text-align: center;
 }
 
+
+@media(min-width: 768px) {
+    .titulo {
+        font-size: 50px;        
+    }
+}
 
 img {
     display: block;
@@ -40,8 +46,16 @@ img {
 
 .menu {
     position: relative;
-    width: 200px;
-    height: 200px;
+    width: 100px;
+    height: 100px;
+}
+
+@media(min-width: 768px) {
+    .menu {
+        position: relative;
+        width: 200px;
+        height: 200px;
+    }
 }
 
 .checkbox {
@@ -98,42 +112,86 @@ img {
     box-shadow: 0 0 6px rgba(0, 0, 0, 0.4);
 }
 
+
 /* productos */
 .checkbox:checked~ .menu_link:nth-child(3) { 
-    transform: translateY(-280px);
+    transform: translateY(-140px);
 }
 
 /* envio */
 .checkbox:checked~ .menu_link:nth-child(4) {
-    transform: translate(-195px, -195px);
+    transform: translate(-99px, -99px);
 }
 
 /* contacto */
 .checkbox:checked~ .menu_link:nth-child(5) {
-    transform: translate(195px, 195px);
+    transform: translate(99px, 99px);
 }
 
 /* historia */
 .checkbox:checked~ .menu_link:nth-child(6) {
-    transform: translate(-195px, 195px);
+    transform: translate(-99px, 99px);
 }
 
 /* wathsapp */
 .checkbox:checked~ .menu_link:nth-child(7) {
-    transform: translateY(280px);
+    transform: translateY(140px);
 }
 
 /* localicacion */
 .checkbox:checked~ .menu_link:nth-child(8) {
-    transform: translateX(280px);
+    transform: translateX(140px);
 }
 
 /* galeria */
 .checkbox:checked~ .menu_link:nth-child(9) {
-    transform: translateX(-280px);
+    transform: translateX(-140px);
 }
 
 /* informacion */
 .checkbox:checked~ .menu_link:nth-child(10) {
-    transform: translate(195px, -195px);
+    transform: translate(99px, -99px);
+}
+
+@media(min-width: 768px) {
+    
+    /* productos */
+    .checkbox:checked~ .menu_link:nth-child(3) { 
+        transform: translateY(-280px);
+    }
+
+    /* envio */
+    .checkbox:checked~ .menu_link:nth-child(4) {
+        transform: translate(-195px, -195px);
+    }
+
+    /* contacto */
+    .checkbox:checked~ .menu_link:nth-child(5) {
+        transform: translate(195px, 195px);
+    }
+
+    /* historia */
+    .checkbox:checked~ .menu_link:nth-child(6) {
+        transform: translate(-195px, 195px);
+    }
+
+    /* wathsapp */
+    .checkbox:checked~ .menu_link:nth-child(7) {
+        transform: translateY(280px);
+    }
+
+    /* localicacion */
+    .checkbox:checked~ .menu_link:nth-child(8) {
+        transform: translateX(280px);
+    }
+
+    /* galeria */
+    .checkbox:checked~ .menu_link:nth-child(9) {
+        transform: translateX(-280px);
+    }
+
+    /* informacion */
+    .checkbox:checked~ .menu_link:nth-child(10) {
+        transform: translate(195px, -195px);
+    }
 }
