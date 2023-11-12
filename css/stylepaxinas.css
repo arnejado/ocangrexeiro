@@ -83,6 +83,7 @@ article p {
     height: 60px; /* Asegúrate de que el ancho y el alto sean iguales para un círculo perfecto */
     border-radius: 50%; /* Esto hace que la imagen sea redonda */
     object-fit: cover; /* Esto asegura que la imagen cubra todo el espacio del botón, sin distorsionarse */
+    background-color: #fff;
   }
   
 
