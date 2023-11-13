@@ -23,7 +23,7 @@ body {
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    background-color: rgb(201, 197, 197);
+    /* background-color: rgb(201, 197, 197); */
 }
 
 h1 {
@@ -42,10 +42,15 @@ h1 {
 h2 {
     font-size: 20px;
     font-family: 'roboto';
+    margin-top: 10px;
     padding-top: 20px;
 }
 
-
+@media(min-width: 768px) {
+    h2 {
+        font-size: 30px;
+    }
+}
 .contenedor {
     border-top: 1px solid grey;
     background-color: rgb(255, 255, 255);
@@ -68,7 +73,19 @@ article p {
     margin: 10px;
     font-family: 'Roboto';
     text-indent: 2em;
+    font-size: 16px;
 } 
+
+@media(min-width: 1020px) {
+    article p {
+        font-size: 20px;
+    }
+}
+
+img {
+    display: block;
+    width: 100%;
+}
 
 .btn-flotante {
     position: fixed;
@@ -86,4 +103,59 @@ article p {
     background-color: #fff;
   }
   
+  @media(min-width: 1020px) {
+    .btn-flotante {
+        right: calc(50% - 480px); /* Centra el botón y luego lo desplaza 480px a la derecha */
+    }
+}
 
+.fotoAntigua {
+    max-width: 1020px;
+}
+
+.pie-pagina {
+    /* position: fixed; */
+    font-family: 'Roboto';
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #000; /* Fondo negro */
+    color: #fff; /* Letras blancas */
+    text-align: left; /* Alinea el texto a la izquierda */
+    padding: 10px 0;
+}
+
+.contendorPie {
+    display: flex; /* Hace que los enlaces estén en la misma fila */
+    flex-direction: column; /* Los enlaces se muestran en columna por defecto */
+    align-items: left; /* Centra los enlaces en pantallas pequeñas */
+    justify-content: space-around; /* Distribuye los enlaces uniformemente a lo largo de la fila */
+    margin: 0 auto; /* Centra el contenedor en pantallas grandes */
+    padding: 0 20px; /* Añade un poco de espacio a los lados del contenedor */
+}
+
+
+.menu_link {
+    color: #fff; /* Letras blancas */
+    text-decoration: none; /* Elimina el subrayado de los enlaces */
+    flex: 1; /* Hace que todos los enlaces ocupen el mismo ancho */
+    text-align: left; 
+    margin: 4px 0; /* Añade un poco de espacio entre los enlaces */
+}
+
+@media (min-width: 1021px) {
+    .contendorPie {
+        align-items: center;
+        flex-direction: row; /* Los enlaces se muestran en fila en pantallas grandes */
+        width: 1020px; /* Establece el ancho del contenedor en pantallas grandes */
+    }
+
+    .menu_link {
+        text-align: center; /* Centra el texto de los enlaces */    
+    }
+}
+
+
+.menu_link:hover {
+    color: #ddd; /* Cambia el color de las letras al pasar el ratón por encima */
+}
