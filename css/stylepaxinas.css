@@ -57,10 +57,26 @@ h2 {
     width: 100%;
 }
 
+.contendor_mapa {
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.contenedor_contacto {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 30px;
+    justify-content: space-around;
+    font-family: 'Roboto';
+    font-size: 25px;
+    text-decoration: none; /* Elimina el subrayado de los enlaces */
+} 
+
 @media(min-width: 1020px) {
     .contenedor {
         width: 1020px;
-    }
+            }
 }
 
 
@@ -158,4 +174,9 @@ img {
 
 .menu_link:hover {
     color: #ddd; /* Cambia el color de las letras al pasar el ratón por encima */
+}
+
+.logo_en_contacto {
+    width: 250px;
+    height: 250px;
 }
