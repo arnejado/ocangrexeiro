@@ -64,7 +64,7 @@ h2 {
 
 .contenedor_contacto {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     align-items: center;
     margin-bottom: 30px;
     justify-content: space-around;
@@ -177,6 +177,11 @@ img {
 }
 
 .logo_en_contacto {
-    width: 250px;
-    height: 250px;
+    width: 200px;
+    height: 200px;
+}
+
+.contacto {
+    font-family: 'Roboto';
+    font-size: 20px;
 }
