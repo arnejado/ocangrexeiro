@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -48,16 +48,16 @@
     <div class="swiper-wrapper">
       <!-- Slides -->
       <div class="swiper-slide">
-        <img src="../imaxes/foto antigua barco.jpeg" alt="Imagen 1" />
+        <img src="../imaxes/foto antigua barco.jpeg" alt="foto antigua barco" />
       </div>
       <div class="swiper-slide">
-        <img src="../imaxes/foto antigua barquita.jpeg" alt="Imagen 2" />
+        <img src="../imaxes/foto antigua barquita.jpeg" alt="foto antigua barquita" />
       </div>
       <div class="swiper-slide">
-        <img src="../imaxes/foto antigua rianxo.jpeg" alt="Imagen 3" />
+        <img src="../imaxes/foto antigua rianxo.jpeg" alt="foto antigua rianxo" />
       </div>
       <div class="swiper-slide">
-        <img src="../imaxes/foto antigua.jpeg" alt="Imagen 4" />
+        <img src="../imaxes/foto antigua.jpeg" alt="foto antigua" />
       </div>
       
     </div>
@@ -93,17 +93,20 @@
             </a>
         </div>
     </footer>
-</body>
+
 
 <!-- para el efecto de las imagenes -->
-<script src="https://unpkg.com/swiper/swiper-bundle.min.js">
-    var swiper = new Swiper(".swiper", {
-  effect: "cards",
-  cardsEffect: {
-    perSlideOffset: 20, // Space between cards in px
-    perSlideRotate: 1, // Rotation of cards in degrees
-  },
-});
+<!-- Swiper JS -->
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+<!-- Tu código JS -->
+<script>
+  var swiper = new Swiper(".swiper", {
+    effect: "cards",
+    cardsEffect: {
+      perSlideOffset: 20, // Space between cards in px
+      perSlideRotate: 1, // Rotation of cards in degrees
+    },
+  });
 </script>
-
+</body>
 </html>
