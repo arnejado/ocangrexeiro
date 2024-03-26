@@ -107,7 +107,7 @@ img {
     position: fixed;
     bottom: 40px;
     right: 40px;
-    z-index: 99;
+    z-index: 1;
   }
   
   .btn-flotante img {
