@@ -15,8 +15,8 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 90vh;
-    
+    /* height: 90vh; */
+     
 }
 
 .titulo {
@@ -38,6 +38,27 @@ body {
         font-size: 50px;        
     }
 }
+@media (orientation: portrait) {
+    .cuadricula {
+        display: grid;
+        grid-template-columns: 2fr 1fr 2fr;
+        grid-template-rows: 2fr 1fr 2fr;
+        grid-column-gap: 0px;
+        grid-row-gap: 0px;
+        height: 100vw;
+        width: 100%;
+        }
+}
+
+.cuadricula {
+    display: grid;
+    grid-template-columns: 2fr 1fr 2fr;
+    grid-template-rows: 2fr 1fr 2fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    height: 100vh;
+    width: 100vh;
+    }
 
 img {
     display: block;
@@ -45,18 +66,13 @@ img {
 }
 
 .menu {
+    grid-area: 2 / 2 / 3 / 3;
     position: relative;
-    width: 100px;
-    height: 100px;
+    /* width: 100px;
+    height: 100px; */
 }
 
-@media(min-width: 768px) {
-    .menu {
-        position: relative;
-        width: 200px;
-        height: 200px;
-    }
-}
+
 
 .checkbox {
     position: absolute;
