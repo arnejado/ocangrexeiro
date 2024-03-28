@@ -1,0 +1,138 @@
+
+.checkbox {
+    position: absolute;
+    visibility: hidden;
+    opacity: 0;
+}
+
+.label_checkbox, .menu_link {
+    position: absolute;
+    padding: 10px;
+    display: block;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    transition: transform 0.3s,
+    background-color 0.3s, box-shadow 0.3s;
+}
+
+.label_checkbox {
+    padding: 15px;
+    background-color: #fff;
+    z-index: 6;
+    cursor: pointer;
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.4);
+}
+/* 
+.label_checkbox:hover {
+    box-shadow: 0 0 5px red, 0 0 15px red, 0 0 30px red, 0 0 50px red;
+} */
+
+.label_checkbox:hover~ body {
+    background-color: black;
+}
+
+.menu_link{
+    background-color: #fff;
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0);
+}
+
+.menu_link:hover {
+    background-color: lightgray;
+}
+
+.menu_link:hover:nth-child(7) {
+    background-color: #00e278;
+}
+
+.checkbox:checked~ .label_checkbox {
+    transform: rotate(45deg);
+}
+
+.checkbox:checked~ .menu_link {
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.4);
+}
+
+
+/* productos */
+.checkbox:checked~ .menu_link:nth-child(3) { 
+    transform: translateY(-140px);
+}
+
+/* envio */
+.checkbox:checked~ .menu_link:nth-child(4) {
+    transform: translate(-99px, -99px);
+}
+
+/* contacto */
+.checkbox:checked~ .menu_link:nth-child(5) {
+    transform: translate(99px, 99px);
+}
+
+/* historia */
+.checkbox:checked~ .menu_link:nth-child(6) {
+    transform: translate(-99px, 99px);
+}
+
+/* wathsapp */
+.checkbox:checked~ .menu_link:nth-child(7) {
+    transform: translateY(140px);
+}
+
+/* localicacion */
+.checkbox:checked~ .menu_link:nth-child(8) {
+    transform: translateX(140px);
+}
+
+/* galeria */
+.checkbox:checked~ .menu_link:nth-child(9) {
+    transform: translateX(-140px);
+}
+
+/* informacion */
+.checkbox:checked~ .menu_link:nth-child(10) {
+    transform: translate(99px, -99px);
+}
+
+@media(min-width: 768px) {
+    
+    /* productos */
+    .checkbox:checked~ .menu_link:nth-child(3) { 
+        transform: translateY(-280px);
+    }
+
+    /* envio */
+    .checkbox:checked~ .menu_link:nth-child(4) {
+        transform: translate(-195px, -195px);
+    }
+
+    /* contacto */
+    .checkbox:checked~ .menu_link:nth-child(5) {
+        transform: translate(195px, 195px);
+    }
+
+    /* historia */
+    .checkbox:checked~ .menu_link:nth-child(6) {
+        transform: translate(-195px, 195px);
+    }
+
+    /* wathsapp */
+    .checkbox:checked~ .menu_link:nth-child(7) {
+        transform: translateY(280px);
+    }
+
+    /* localicacion */
+    .checkbox:checked~ .menu_link:nth-child(8) {
+        transform: translateX(280px);
+    }
+
+    /* galeria */
+    .checkbox:checked~ .menu_link:nth-child(9) {
+        transform: translateX(-280px);
+    }
+
+    /* informacion */
+    .checkbox:checked~ .menu_link:nth-child(10) {
+        transform: translate(195px, -195px);
+    }
+}
