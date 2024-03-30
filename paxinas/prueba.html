@@ -23,6 +23,7 @@
                 grid-row-gap: 0px;
                 height: 100vh;
                 width: 100vh;
+                position: relative;
             }
 
         @media (orientation: portrait) {
@@ -75,11 +76,25 @@
             background-color: greenyellow;
         }
 
-        img{
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-        }
+/* Estilo para las imágenes */
+.image1,
+.image2 {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Posición de la primera imagen */
+.image1 {
+    top: 0;
+    left: 0;
+}
+
+/* Posición de la segunda imagen (encima de la primera) */
+.image2 {
+    top: 0;
+    left: 0;
+}
     </style>
 </head>
 
@@ -90,7 +105,8 @@
         <div class="div3"> </div>
         <div class="div4"> </div>
         <div class="div5">
-            <img src="../imaxes/logo web fondo redondo.png" alt="logo Cangrexeiro">    
+            <img src="../imaxes/logo web fondo redondo.png" alt="logo Cangrexeiro" class="image1">
+            <img src="../imaxes/galeria.png" alt="Galeria" class="image2">
         </div>
         <div class="div6"> </div>
         <div class="div7"> </div>
