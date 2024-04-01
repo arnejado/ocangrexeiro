@@ -41,7 +41,7 @@ body{
 }
 
 .cuadricula {
-    background-color: lightblue;
+    background-color: lightpink;
     display: grid;
     grid-template-columns: 1fr 25% 1fr 25% 1fr 25% 1fr;
     grid-template-rows: 1fr 25% 1fr 25% 1fr 25% 1fr;
