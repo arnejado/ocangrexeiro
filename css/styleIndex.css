@@ -41,7 +41,7 @@ body{
 }
 
 .cuadricula {
-    background-color: lightpink;
+    background-color: lightblue;
     display: grid;
     grid-template-columns: 1fr 25% 1fr 25% 1fr 25% 1fr;
     grid-template-rows: 1fr 25% 1fr 25% 1fr 25% 1fr;
@@ -117,8 +117,8 @@ body{
 
 .menu_link {
     z-index: 19;
-    width: 90%;
-    height: 90%;
+    width: 100%;
+    height: 100%;
     top: 0;
     left: 0;
 }
@@ -127,8 +127,8 @@ body{
     z-index: 1;
     top: 0;
     left: 0;
-    width: 90%;
-    height: 90%;
+    width: 100%;
+    height: 100%;
 }
 
 
@@ -170,40 +170,40 @@ body{
 
 /* productos */
 .checkbox:checked~ .menu_link:nth-child(3) { 
-    transform: translateY(-125%);
+    transform: translateY(-135%);
 }
 
 /* envio */
 .checkbox:checked~ .menu_link:nth-child(4) {
-    transform: translate(-85%, -85%);
+    transform: translate(-90%, -90%);
 }
 
 /* contacto */
 .checkbox:checked~ .menu_link:nth-child(5) {
-    transform: translate(85%, 85%);
+    transform: translate(90%, 90%);
 }
 
 /* historia */
 .checkbox:checked~ .menu_link:nth-child(6) {
-    transform: translate(-85%, 85%);
+    transform: translate(-90%, 90%);
 }
 
 /* wathsapp */
 .checkbox:checked~ .menu_link:nth-child(7) {
-    transform: translateY(125%);
+    transform: translateY(135%);
 }
 
 /* localicacion */
 .checkbox:checked~ .menu_link:nth-child(8) {
-    transform: translateX(125%);
+    transform: translateX(135%);
 }
 
 /* galeria */
 .checkbox:checked~ .menu_link:nth-child(9) {
-    transform: translateX(-125%);
+    transform: translateX(-135%);
 }
 
 /* informacion */
 .checkbox:checked~ .menu_link:nth-child(10) {
-    transform: translate(85%, -85%);
+    transform: translate(90%, -90%);
 }
