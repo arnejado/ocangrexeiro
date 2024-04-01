@@ -110,9 +110,14 @@ body{
 }
 
 .menu_img {
-    z-index: 2;
+    z-index: 20;
 }
 
+.menu_link-img {
+    z-index: 1;
+    top: 0;
+    left: 0;
+}
 
 
 
@@ -155,7 +160,7 @@ body{
 
 /* productos */
 .checkbox:checked~ .menu_link:nth-child(3) { 
-    transform: translateY(-140px);
+    transform: translateY(-30%);
 }
 
 /* envio */
