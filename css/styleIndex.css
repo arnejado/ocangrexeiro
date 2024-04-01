@@ -169,22 +169,22 @@ body{
 
 /* envio */
 .checkbox:checked~ .menu_link:nth-child(4) {
-    transform: translate(-55%, -55%);
+    transform: translate(-80%, -80%);
 }
 
 /* contacto */
 .checkbox:checked~ .menu_link:nth-child(5) {
-    transform: translate(55%, 55%);
+    transform: translate(75%, 75%);
 }
 
 /* historia */
 .checkbox:checked~ .menu_link:nth-child(6) {
-    transform: translate(-99px, 99px);
+    transform: translate(-70%, 70%x);
 }
 
 /* wathsapp */
 .checkbox:checked~ .menu_link:nth-child(7) {
-    transform: translateY(140px);
+    transform: translateY(110%);
 }
 
 /* localicacion */
