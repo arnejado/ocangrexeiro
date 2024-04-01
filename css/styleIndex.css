@@ -102,7 +102,7 @@ body{
     
 }
 
-.menu_link-img {
+.menu_link, .menu_link-img {
     position: absolute;
     width: 100%;
     height: 100%;
