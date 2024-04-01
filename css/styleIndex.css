@@ -111,10 +111,14 @@ body{
 
 .menu_img {
     z-index: 20;
+    width: 100%;
+    height: 100%;
 }
 
 .menu_link {
     z-index: 19;
+    width: 100%;
+    height: 100%;
     top: 0;
     left: 0;
 }
@@ -123,6 +127,8 @@ body{
     z-index: 1;
     top: 0;
     left: 0;
+    width: 90%;
+    height: 90%;
 }
 
 
@@ -164,7 +170,7 @@ body{
 
 /* productos */
 .checkbox:checked~ .menu_link:nth-child(3) { 
-    transform: translateY(-110%);
+    transform: translateY(-125%);
 }
 
 /* envio */
@@ -179,12 +185,12 @@ body{
 
 /* historia */
 .checkbox:checked~ .menu_link:nth-child(6) {
-    transform: translate(-70%, 70%x);
+    transform: translate(-70%, 70%);
 }
 
 /* wathsapp */
 .checkbox:checked~ .menu_link:nth-child(7) {
-    transform: translateY(110%);
+    transform: translateY(125%);
 }
 
 /* localicacion */
