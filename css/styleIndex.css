@@ -80,7 +80,6 @@ body{
 
 .agrupador {
     position: relative;
-    display: flex; /* Alinea las imágenes horizontalmente */
     justify-content: center; /* Centra horizontalmente */
     align-items: center; /* Centra verticalmente */
     width: 100%;
