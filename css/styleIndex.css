@@ -113,7 +113,7 @@ body{
     z-index: 20;
 }
 
-.menu_link-img {
+.menu_link, .menu_link-img {
     z-index: 1;
     top: 0;
     left: 0;
