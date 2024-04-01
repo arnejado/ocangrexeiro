@@ -101,7 +101,11 @@ body{
     position: absolute;
     width: 100%;
     height: 100%;
+    
+}
 
+.menu_img {
+    z-index: 2;
 }
 
 
