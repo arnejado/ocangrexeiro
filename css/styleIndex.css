@@ -160,7 +160,7 @@ body{
 
 /* productos */
 .checkbox:checked~ .menu_link:nth-child(3) { 
-    transform: translateY(-30%);
+    transform: translateY(-60%);
 }
 
 /* envio */
