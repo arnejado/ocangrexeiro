@@ -90,18 +90,24 @@ body{
 .label_checkbox, .menu_link {
     width: 100%;
     height: 100%;
-    object-fit: cover;
     border-radius: 50%;
     display: block;
     transition: transform 0.3s,
     background-color 0.3s, box-shadow 0.3s;
 }
 
-.menu_img, .menu_link-img {  /* con esto conseguimos que la imagen del logo este dentro del div */
+.menu_img  {  /* con esto conseguimos que la imagen del logo este dentro del div */
     position: absolute;
     width: 100%;
     height: 100%;
     
+}
+
+.menu_link-img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+ 
 }
 
 .menu_img {
