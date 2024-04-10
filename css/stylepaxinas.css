@@ -19,6 +19,7 @@
 }
 
 body {
+    max-width: 99vw;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -60,6 +61,7 @@ h2 {
 .contendor_mapa {
     align-items: center;
     margin-bottom: 30px;
+    width: 100%;
 }
 
 .contenedor_contacto {

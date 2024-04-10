@@ -4,13 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Probando conexion</title>
+    <link rel="stylesheet" href="../css/normalice.css">
+    <link rel="stylesheet" href="../css/stylenav.css">
     <style>
         body{
             background-color: lightblue;
+            
+        }
+
+        .todo {
             height: 95vh;
-            width: 95vw;
-            display: flex;
-            justify-content: center; /* Centra horizontalmente */
+            width: 100vw;
+            display: flex;   
+            justify-content: center; 
             align-items: center;
 
         }
@@ -96,23 +102,90 @@
     z-index: 1;
 }
 
-</style>
+    </style>
 </head>
 
 <body>
-    <div class="parent">
-        <div class="div1"> </div>
-        <div class="div2"> </div>
-        <div class="div3"> </div>
-        <div class="div4"> </div>
-        <div class="div5">
-            <img src="../imaxes/logo web fondo redondo.png" alt="logo Cangrexeiro" class="image1">
-            <img src="../imaxes/galeria.png" alt="Galeria" class="image2">
+    <nav>
+        <div class="sidebar-header">
+          <a class="logo-wrapper">
+            <img src="../imaxes/logo web fondo redondo.png" alt="Logo">
+            <h2 class="hidden">LOGO</h2>
+          </a>
+          <button class="toggle-btn">
+            <img src="../imaxes/flecha.png" alt="expand button">
+          </button>
         </div>
-        <div class="div6"> </div>
-        <div class="div7"> </div>
-        <div class="div8"> </div>
-        <div class="div9"> </div>
+  
+  
+        <div class="sidebar-links">
+          <a class="link active">
+            <img src="./assets/home.svg" alt="">
+            <span class="hidden">Home</span>
+          </a>
+          <a class="link">
+            <img src="./assets/projects.svg" alt="">
+            <span class="hidden">Projects</span>
+          </a>
+          <a class="link">
+            <img src="./assets/dashboard.svg" alt="">
+            <span class="hidden">Dashboard</span>
+          </a>
+          </li>
+          <a class="link">
+            <img src="./assets/tasks.svg" alt="">
+            <span class="hidden">Tasks</span>
+          </a>
         </div>
+  
+  
+        <div class="sidebar-bottom">
+          <div class="sidebar-links">
+            <a class="link">
+              <img src="./assets/settings.svg" alt="">
+              <span class="hidden">Settings</span>
+            </a>
+          </div>
+  
+          <div class="user-profile">
+            <div class="user-avatar">
+              <img src="./assets/profile-pic.jpg" alt="">
+            </div>
+            <div class="user-details hidden">
+              <p class="username">Praza de Abastos</p>
+              <p class="user-email">Casetas 186-187</p>
+            </div>
+          </div>
+        </div>
+        
+      </nav>
+
+
+      <div class="todo">
+        <div class="parent">
+            <div class="div1"> </div>
+            <div class="div2"> </div>
+            <div class="div3"> </div>
+            <div class="div4"> </div>
+            <div class="div5">
+                <img src="../imaxes/logo web fondo redondo.png" alt="logo Cangrexeiro" class="image1">
+                <img src="../imaxes/galeria.png" alt="Galeria" class="image2">
+            </div>
+            <div class="div6"> </div>
+            <div class="div7"> </div>
+            <div class="div8"> </div>
+            <div class="div9"> </div>
+        </div>
+      </div>
+
+    <script>
+        const sidebarBtn = document.querySelector(".toggle-btn");
+        const sidebar = document.querySelector("aside");
+        
+        sidebarBtn.addEventListener("click", () => {
+          document.body.classList.toggle("active");
+        });
+    </script>
+    
 </body>
 </html>
